@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Applicationformyhomework_run</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_menu_home">主页</string>
+    <string name="tab_menu_run">运动</string>
+    <string name="tab_menu_channel">个人</string>
+</resources>

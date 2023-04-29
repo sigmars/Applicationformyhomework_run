@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RunFragment"
+    android:background="@color/bg_yellow">
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/button_start_end"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="开始"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/btn_selector"
+            android:onClick="starthandel"/>
+        <com.baidu.mapapi.map.MapView
+            android:layout_marginTop="20dp"
+            android:id="@+id/bmapView_run"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:clickable="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_time_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="35dp"
+                android:text="00:00:00"
+                android:textColor="@color/text_yellow"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0.1KM"
+                android:textColor="@color/text_yellow"
+                android:textSize="35dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>
